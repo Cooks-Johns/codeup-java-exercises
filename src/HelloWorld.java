@@ -28,14 +28,22 @@ public class HelloWorld {
 //        // adds up to the next print
 //        System.out.println(x++);
 //        System.out.println(x);
+//
+//        int x = 5;
+//        // when the ++ is before the int it prints the number with
+//        // added values already included
+//        System.out.println(++x);
+//        System.out.println(x);
 
-        int x = 5;
-        // when the ++ is before the int it prints the number with
-        // added values already included
-        System.out.println(++x);
-        System.out.println(x);
+//        int x = 4;
+//        x = x + 5;
+//
+//        System.out.println(x);
 
-
+        int x = 3;
+        int y = 4;
+        y = y * x;
+        System.out.println(y);
 
 
 
