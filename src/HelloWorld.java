@@ -40,14 +40,19 @@ public class HelloWorld {
 //
 //        System.out.println(x);
 
-        int x = 3;
-        int y = 4;
-        y = y * x;
+//        int x = 3;
+//        int y = 4;
+//        y = y * x;
+//        System.out.println(y);
+//
+
+        int x = 10;
+        int y = 2;
+        x = x / y;
+        y = y - x;
+
         System.out.println(y);
-
-
-
-
+        System.out.println(x);
 
 
 
