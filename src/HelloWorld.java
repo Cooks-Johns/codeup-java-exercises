@@ -16,8 +16,18 @@ public class HelloWorld {
 
         System.out.println(myString + myFavoriteNumber + "!");
 
-        long myNumber = 123;
+
+
+//        double myNumber = 3.14;
+        float myNumber = 123;
         System.out.println(myNumber);
+
+
+        int x = 5;
+        System.out.println(x++);
+        System.out.println(x);
+
+
 
 
 
