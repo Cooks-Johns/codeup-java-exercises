@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class ControlFlowExercises {
     public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
 
         //-------=============          A
 
@@ -91,7 +92,6 @@ public class ControlFlowExercises {
 //        4      | 16      | 64
 //        5      | 25      | 125
 
-        Scanner sc = new Scanner(System.in);
         boolean userContinues = true;
 
         do {
@@ -117,6 +117,31 @@ public class ControlFlowExercises {
                 }
             } while (userContinues);
 
+
+        String choice = "y";
+        while (choice.equalsIgnoreCase("y")) {
+            System.out.println("Enter your class grade: ");
+            int grade = sc.nextInt();
+
+            if (grade >= 99 & grade <= 100) {
+                System.out.println("Your grade is a A+");
+            } else if (grade >= 88) {
+                System.out.println("Your grade is a A");
+            } else if (grade >= 80 & grade <= 87) {
+                System.out.println("You received a B");
+            } else if (grade >= 67 & grade <= 79) {
+                System.out.println("You received a C");
+            } else if (grade >= 60 & grade <= 66) {
+                System.out.println("You received an D");
+            } else if (grade >= 0 & grade <= 59) {
+                System.out.println("You received an F");
+            }
+
+            System.out.print("Enter another grade? (y/n): ");
+            System.out.println();
+            choice = sc.next();
+
+        }
 
 
 
