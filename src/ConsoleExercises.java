@@ -2,24 +2,38 @@ import java.util.Scanner;
 
 public class ConsoleExercises {
     public static void main(String[] args){
-        String userInput;
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Show Me What You Got!  ");
-        userInput =  sc.nextLine();
+
+
+        System.out.print("Give me that int");
+        int favNum = sc.nextInt();
+        System.out.println("Your int of " + favNum + " is to low!");
 
 
 
-        System.out.println("Is that all You got? " + userInput + " ,HAHAHAHAHAHA");
-        System.out.println("==================");
-        sc.nextLine();
 
 
-        int facvNum;
-        System.out.println("givwe it to me");
-        facvNum = sc.nextInt();
 
-        System.out.println("your num" + facvNum);
+            System.out.println("Enter Three words ");
 
+
+
+            String string1 = sc.next();
+            String string2 = sc.next();
+            String string3 = sc.next();
+
+
+            System.out.println("Here is what you entered: ");
+
+            System.out.println(
+
+                   string3 + ", " + " " + string1 +
+
+                    ", and " + string2);
+
+
+
+        }
     }
-}
+
