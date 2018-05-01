@@ -7,12 +7,12 @@ public class ControlFlowExercises {
         //-------=============          A
 
 
-        int i = 5;
-        while (i <= 15) {  // boolean expression -> the condition to stop
-            System.out.println(i);
-            i++;
-        }
-//-------=============          B
+//        int i = 5;
+//        while (i <= 15) {  // boolean expression -> the condition to stop
+//            System.out.println(i);
+//            i++;
+//        }
+////-------=============          B
 //        int doWhile = 0;
 //        do{
 //            System.out.println(doWhile);
@@ -148,10 +148,13 @@ public class ControlFlowExercises {
             } else if (grade <= 66 & grade >= 64) {
                 System.out.println("You received an D");
             } else if (grade <= 63 & grade >= 60) {
-                System.out.println("You received an D-");
+                System.out.println("You received an D- Eres super burro");
             } else if (grade >= 0 & grade <= 59) {
-                System.out.println("You received an F, so let's meet to bring it up!");
-            }
+                System.out.println("You received an F for fuck nestor, Eres super burro!");
+            } else {
+               System.out.println("this is not a grade");
+
+           }
 
             System.out.print("Enter another grade? (y/n): ");
             System.out.println();
