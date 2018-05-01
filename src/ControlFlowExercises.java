@@ -8,7 +8,7 @@ public class ControlFlowExercises {
 
 
         int i = 5;
-        while (i <= 15) {
+        while (i <= 15) {  // boolean expression -> the condition to stop
             System.out.println(i);
             i++;
         }
@@ -45,18 +45,18 @@ public class ControlFlowExercises {
 //        }
 
             //-------=============  FIZZBUZZ
-
+//
 //        for (int a = 1; a <= 100; a++) {
 //            boolean fizzBuzz = false;
 //            if (a % 3 == 0) {
-//                System.out.println("Fizz" + a);
+//                System.out.println("Fizz");
 //                fizzBuzz = true;
 //            } if ( a % 5 == 0) {
 //                System.out.println("You're a Buzz Kill Fizz");
 //                fizzBuzz = true;
-//            } if ( a % 3 == 0) {
-//                System.out.println(a);
-//                fizzBuzz = true;
+////            } if ( a % 3 == 0) {
+////                System.out.println(a);
+////                fizzBuzz = true;
 //            } else {
 //                System.out.println(String.valueOf(a));
 //            }
@@ -101,7 +101,7 @@ public class ControlFlowExercises {
                 System.out.println("Here is your table!");
                 System.out.println();
                 System.out.println("number | squared | cubed");
-                System.out.println("------ | ------- | -----");
+                System.out.println("______ | ______ | ______");
                 for (int r = 1; r <= userInt; r += 1) {
                     System.out.format("%-7d", r);
                     System.out.print("|");
@@ -118,23 +118,39 @@ public class ControlFlowExercises {
             } while (userContinues);
 
 
+
+
         String choice = "y";
         while (choice.equalsIgnoreCase("y")) {
             System.out.println("Enter your class grade: ");
             int grade = sc.nextInt();
 
-            if (grade >= 99 & grade <= 100) {
+           if (grade >= 99 & grade <= 100) {
                 System.out.println("Your grade is a A+");
-            } else if (grade >= 88) {
+            } else if (grade <= 98 & grade >= 94) {
                 System.out.println("Your grade is a A");
-            } else if (grade >= 80 & grade <= 87) {
+            } else if (grade <= 93 & grade >= 90) {
+                System.out.println("Your grade is a A-");
+            } else if (grade <= 89 & grade >= 87) {
+                System.out.println("You received a B+");
+            } else if (grade <= 86 & grade >= 84) {
                 System.out.println("You received a B");
-            } else if (grade >= 67 & grade <= 79) {
+            } else if (grade <= 83 & grade >= 80) {
+                System.out.println("You received a B-");
+            } else if (grade <= 79 & grade >= 77) {
+                System.out.println("You received a C+");
+            } else if (grade <= 76 & grade >= 74) {
                 System.out.println("You received a C");
-            } else if (grade >= 60 & grade <= 66) {
+            } else if (grade <= 75 & grade >= 70) {
+                System.out.println("You received a C-");
+            } else if (grade <= 69 & grade >= 67) {
+                System.out.println("You received an D+");
+            } else if (grade <= 66 & grade >= 64) {
                 System.out.println("You received an D");
+            } else if (grade <= 63 & grade >= 60) {
+                System.out.println("You received an D-");
             } else if (grade >= 0 & grade <= 59) {
-                System.out.println("You received an F");
+                System.out.println("You received an F, so let's meet to bring it up!");
             }
 
             System.out.print("Enter another grade? (y/n): ");
