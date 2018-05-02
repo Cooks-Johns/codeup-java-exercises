@@ -150,7 +150,7 @@ public class ControlFlowExercises {
             } else if (grade <= 63 & grade >= 60) {
                 System.out.println("You received an D- Eres super burro");
             } else if (grade >= 0 & grade <= 59) {
-                System.out.println("You received an F for fuck nestor, Eres super burro!");
+                System.out.println("You received an F, Eres super burro!");
             } else {
                System.out.println("this is not a grade");
 

@@ -10,20 +10,45 @@ public class Bob {
 
 
         Scanner sc = new Scanner(System.in);
+//
+//        System.out.println("Ask Bob a question: ");
+//        String response = sc.nextLine();
 
-        System.out.println("Ask Bob a question: ");
-        String response = sc.nextLine();
+//
+//        if (response.endsWith("?")) {
+//            System.out.println("Sure");
+//        } else if (response.trim().equals("")) {
+//            System.out.println("Fine. Be that way!");
+//        } else if (response.endsWith("!") || response.toUpperCase().equals(response)) {
+//            System.out.println("Whoa, chill out!");
+//        } else {
+//            System.out.println("Whatever..");
+//        }
 
 
-        if (response.endsWith("?")) {
-            System.out.println("Sure");
-        } else if (response.trim().equals("")) {
-            System.out.println("Fine. Be that way!");
-        } else if (response.endsWith("!") || response.toUpperCase().equals(response)) {
-            System.out.println("Whoa, chill out!");
-        } else {
-            System.out.println("Whatever..");
-        }
+        /// -----------==================       NOTES
+
+        Scanner input = new Scanner(System.in);
+
+          System.out.print("Talk to bob!");
+          String message = input.next();
+          String bobSays;
+
+          boolean isQuestion = message.endsWith("?");
+          boolean isYelling = message.equals(message.toUpperCase());
+          boolean isEmpty = message.trim().equals("");
+
+          if(isQuestion){
+              bobSays = "Sure.";
+          } else if(isYelling) {
+              bobSays = "Whoah, chill out!";
+          } else if(isEmpty) {
+              bobSays = "Fine. be that way!";
+          } else {
+              bobSays = "Whatever.";
+          }
+
+          System.out.println(bobSays);
 
 
     }
