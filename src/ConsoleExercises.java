@@ -33,8 +33,8 @@ public class ConsoleExercises {
         System.out.print("Please enter a funny phrase \n" );
         String thisSentence = sc.nextLine(); //have to use nextLine() for a sentence
         System.out.println("As the duck sits on the desk the developer looks at him and says <br> " + "' " + thisSentence + "' " +
-                " they love to " + firstWord + " and "  + secondWord + "  , but the really love to do is " + thirdWord +
-                " and if all else fails pour some water on it!");
+                " the duck is just thinking about going to  " + firstWord + " , "  + secondWord + "  , or " + thirdWord +
+                " then tells the developer 'if all else fails pour some water on it!'");
 
 //        Calculate the perimeter and area of Codeup's classrooms
 //        Prompt the user to enter values of length and width of the classroom.
@@ -47,13 +47,26 @@ public class ConsoleExercises {
         System.out.print(firstWord + " and tell me the length: ");
         String thisLongString = sc.next();
         double length = Double.parseDouble(thisLongString);
-        System.out.println("the legnth is  " + length + " so you might want to  ");
+        System.out.println("the legnth is  " + length + " so you might want to  " + firstWord + " some more lol!");
 
-        System.out.print(" and tell me the width: ");
-        String fatString = sc.next();
-        double width = Double.parseDouble(fatString);
-        System.out.print("the width is  " + width + " so you might want to  ");
+        System.out.print(secondWord +" and tell me the width: ");
+        String solidString = sc.next();
+        double width = Double.parseDouble(solidString);
+        System.out.print("the width is  " + width + " so you might want to  " + secondWord + " so you might not want to slow down!");
 
+        System.out.print(thirdWord + "How high is this room we are in ");
+        String olTallStringy = sc.next();
+        double height = Double.parseDouble(olTallStringy);
+        System.out.println("the height is  " + height + " so you might want to  " + thirdWord + " so you might not want to slow down!");
+
+        double area = width * length;
+        System.out.println(area);
+
+        double perimeter = 2 * width + 2 * length;
+        System.out.println(perimeter);
+
+        double volume = width * length * height;
+        System.out.println(volume);
 
 //              area = length x width
 //              perimter = 2 x length + 2 x width
