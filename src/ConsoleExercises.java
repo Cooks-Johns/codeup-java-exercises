@@ -15,7 +15,8 @@ public class ConsoleExercises {
 //        What happens if you enter less than 3 words?
 //        What happens if you enter more than 3 words?
 
-        System.out.print("Please enter three verbs: \n" );
+        System.out.printf("Please enter three verbs \n" + " for your  intMage to spawn verbs, this was his \n" +
+                "" + usrInt  +"th spell!");
         String firstWord = sc.next();
         String secondWord = sc.next();
         String thirdWord = sc.next();
@@ -68,22 +69,6 @@ public class ConsoleExercises {
         double volume = width * length * height;
         System.out.println(volume);
 
-//              area = length x width
-//              perimter = 2 x length + 2 x width
-
-//        Scanner sc = new Scanner(System.in);
-//        System.out.println("Enter the length of Rectangle:");
-//        double length = sc.nextDouble();
-//
-//        System.out.println("Enter the width of Rectangle:");
-//        double width = sc.nextDouble();
-//
-//        System.out.println("Enter the height of Rectangle:");
-//        double height = sc.nextDouble();
-//
-//        double area = length*width;
-//        double volume =length*width*height;
-//        System.out.println("Area of Rectangle is: " + area + " the volume of the Rectangle is: " + volume);
 
         }
     }
