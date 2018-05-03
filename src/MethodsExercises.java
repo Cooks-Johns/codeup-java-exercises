@@ -121,34 +121,29 @@
 //    count(5);
 //
 //
-import java.util.Scanner;
+//import java.util.Scanner;
+//
+//public class MethodsExercises {
+//    public static void main(String[] args) {
+//
+//
+//        System.out.println("It's method time");
+//        System.out.println("Enter Two Numbers " + "(Press Enter after each): ");
+//        int numInput =getInt(1, 10);
+//
+//
+//
+//
+//        public static int add(int a, int b) {
+//        return a + b;
+//    }
+//    public static int getInt(){
+//            Scanner scan = new Scanner((System.in).useDelimiter("\n");
+//            return scan.nextInt();
+//        }
+//
+//    }
+//
+//
+//
 
-public class MethodsExercises {
-    public static void main(String[] args) {
-
-
-        System.out.println("It's method time");
-        System.out.println("Enter Two Numbers " + "(Press Enter after each): ");
-        double number1, number2, sum;
-
-
-        number1 = readThis.nextDouble();
-        number1 = readTh.nextDouble();
-
-        number2 = readThis.nextDouble();
-        sum = number1 + number2;
-    }
-
-        public static int add(int a, int b) {
-        return a + b;
-    }
-
-
-        System.out.println("Total " + sum)
-
-    }
-
-
-
-
-}

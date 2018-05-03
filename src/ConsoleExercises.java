@@ -6,30 +6,32 @@ public class ConsoleExercises {
 
 //        Prompt a user to enter a integer and store that value in an int variable using the nextInt method.
 
-//        int userInput;
-//        Scanner sc = new Scanner(System.in);
-//        System.out.print("Enter a number: ");
-//        userInput = sc.nextInt();
-//        System.out.println("You entered: --> \"" + userInput + "\" <--");
+//
+
+        System.out.print("Enter a number: ");
+        int usrInt = sc.nextInt();
 
 //        Prompt a user to enter 3 words and store each of them in a separate variable, then display them back, each on a newline.
 //        What happens if you enter less than 3 words?
 //        What happens if you enter more than 3 words?
 
-//        Scanner sc = new Scanner(System.in);
-//        System.out.print("Please enter three words: " );
-//        String firstWord = sc.next();
-//        String secondWord = sc.next();
-//        String thirdWord = sc.next();
-//        System.out.println("All the text entered: " + firstWord + " " + secondWord + " " + thirdWord);
+        System.out.print("Please enter three words: " );
+        String firstWord = sc.next();
+        String secondWord = sc.next();
+        String thirdWord = sc.next();
+
+
+        System.out.println("All the text entered: " + firstWord + " " + secondWord + " " + thirdWord);
+
+        sc.nextLine();  // grabs the last \n charcter and we can ignore it
+
 
 //        Prompt a user to enter a sentence, then store that sentence in a String variable using the .next method, then display that sentence back to the user.
 //        do you capture all of the words?
 
-//        Scanner sc = new Scanner(System.in);
-//        System.out.print("Please enter a sentence: " );
-//        String thisSentence = sc.nextLine(); //have to use nextLine() for a sentence
-//        System.out.println("All the text entered: " + thisSentence);
+        System.out.print("Please enter a sentence: " );
+        String thisSentence = sc.nextLine(); //have to use nextLine() for a sentence
+        System.out.println("All the text entered: " + thisSentence);
 
 //        Calculate the perimeter and area of Codeup's classrooms
 //        Prompt the user to enter values of length and width of the classroom.
@@ -37,6 +39,14 @@ public class ConsoleExercises {
 //          Assume that the rooms are perfect rectangles.
 //          Assume that the user will enter valid numeric data for length and width.
 //          Display the area and perimeter of that classroom.
+
+        System.out.println();
+        System.out.print("Input the length: ");
+        String lengthString = sc.next();
+        double length = Double.parseDouble(lengthString);
+        System.out.println("length is " + length);
+
+
 //              area = length x width
 //              perimter = 2 x length + 2 x width
 
