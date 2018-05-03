@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class ConsoleExercises {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-
 //        Prompt a user to enter a integer and store that value in an int variable using the nextInt method.
 
 //
@@ -15,8 +14,8 @@ public class ConsoleExercises {
 //        What happens if you enter less than 3 words?
 //        What happens if you enter more than 3 words?
 
-        System.out.printf("Please enter three verbs \n" + " for your  intMage to spawn verbs, this was his \n" +
-                "" + usrInt  +"th spell!");
+        System.out.println("Please enter three verbs \n" + " for your  intMage to spawn verbs, this was his \n" +
+                usrInt  +"th spell!");
         String firstWord = sc.next();
         String secondWord = sc.next();
         String thirdWord = sc.next();
