@@ -13,7 +13,7 @@ public class Input {
 
 
     public String getString() {
-        return null;  // do this so it can be compiled
+        return scanner.nextLine();  // do this so it can be compiled
     }
 
 
@@ -47,7 +47,9 @@ public class Input {
         return value;
     }
    public double getDouble(){
-        return scanner.nextDouble();
+        double number = scanner.nextDouble();
+        scanner.nextLine();
+        return number;
 
     }
 

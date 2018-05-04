@@ -28,14 +28,14 @@ public class Bob {
 
         /// -----------==================       NOTES
 
-        Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in).useDelimiter("\n");
 
           System.out.print("Talk to bob!");
           String message = input.next();
           String bobSays;
 
           boolean isQuestion = message.endsWith("?");
-          boolean isYelling = message.equals(message.toUpperCase());
+          boolean isYelling = message.equals(message.toUpperCase()) || message.endsWith("!");
           boolean isEmpty = message.trim().equals("");
 
           if(isQuestion){
