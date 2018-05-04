@@ -17,7 +17,7 @@ public class Input {
     }
 
 
-    boolean yesNo() {
+   public boolean yesNo() {
         String answer = scanner.nextLine();
 
         // auto boxing => calue (string -> wrap
@@ -26,7 +26,7 @@ public class Input {
         return "y".equalsIgnoreCase(answer) || "yes".equalsIgnoreCase(answer);
     }
 
-    int getInt(int min, int max) {
+   public int getInt(int min, int max) {
         int value = getInt();
         if(value < min || value > max) {
             System.out.printf("Enter a number between %d  and %d%n", min, max);
@@ -35,11 +35,10 @@ public class Input {
         return value;
     }
 
-    int getInt() {
-        return scanner.nextInt();
+    int getInt() {return scanner.nextInt();
     }
 
-    double getDouble(double min, double max) {
+   public double getDouble(double min, double max) {
         double value = getDouble();
         if(value < min || value > max) {
             System.out.printf("Enter a number between %d  and %d%n", min, max);
@@ -47,7 +46,7 @@ public class Input {
         }
         return value;
     }
-    double getDouble(){
+   public double getDouble(){
         return scanner.nextDouble();
 
     }
