@@ -11,10 +11,10 @@ public class Bob {
 
         Scanner sc = new Scanner(System.in);
 //
-//        System.out.println("Ask Bob a question: ");
-//        String response = sc.nextLine();
+        System.out.println("Ask Bob a question: ");
+        String response = sc.nextLine();
 
-//
+
         if (response.endsWith("?")) {
             System.out.println("Sure");
         } else if (response.trim().equals("")) {
