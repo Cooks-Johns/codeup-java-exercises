@@ -7,24 +7,41 @@ public class ServerNameGenerator {
 
 
     public static void main(String[] args) {
+
+
+
+        String[] adjectives = new String[] {
+                " brave ", " chilling ", " eager ", " gentle ",
+                " Savage ", " Beautiful ", " dope ", " strong ",
+                " powerful "," bright "};
+
+        String[] nouns = new String[]{
+                " dog ", " car ", " goat ", " lapTop ", " hand ",
+                " beef ", " fireBall ", " sun ", " mouse "," moose "};
+
+
+
         String userInput;
         Scanner sc;
         sc = new Scanner(System.in).useDelimiter("\n");
-        String[] adjectives = {" brave ", " calm ", " eager ", " gentle ", " happy ", " beautiful ", " dope ", " strong ", " powerful "," bright "};
-        String[] nouns = {" dog ", " car ", " goat ", " lapTop ", " hand ", " beef ", " fireBall ", " sun ", " mouse "," moose "};
 
 
-//        System.out.println(adjectives[10]);
-//        System.out.println(nouns[10]);
+
+
         System.out.println("What is your name? ");
         userInput = sc.next();
 
-    int length = adjectives.length;
-    for (int i = 0; i < length; i++) {
-        int rand = (int) (Math.random() * length);
+    int adj = adjectives.length;
+    int noun = nouns.length;
+    for (int i = 0;i < noun; i++) {
+        int randAdj = (int) (Math.random() * adj);
+        int randNoun = (int) (Math.random() * noun);
 
 
-        System.out.println("Hello  " + userInput +", your server name is: " + adjectives[rand]);
+
+        System.out.println("Hello  " + userInput +
+                ", your server name options are: " +
+                adjectives[randAdj] + nouns[randNoun]);
     }
 
 
