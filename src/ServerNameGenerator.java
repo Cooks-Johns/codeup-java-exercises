@@ -1,5 +1,4 @@
-import java.util.Arrays;
-import java.util.Random;
+
 import java.util.Scanner;
 
 
@@ -10,14 +9,30 @@ public class ServerNameGenerator {
 
 
 
-        String[] adjectives = new String[] {
-                " brave ", " chilling ", " eager ", " gentle ",
-                " Savage ", " Beautiful ", " dope ", " strong ",
-                " powerful "," bright "};
+        String[] adjectives = new String[10];
+                 adjectives[0] = " brave ";
+                 adjectives[1] = " chilling ";
+                 adjectives[2] = " eager ";
+                 adjectives[3] = " gentle ";
+                 adjectives[4] = " Savage ";
+                 adjectives[5] = " Beautiful ";
+                 adjectives[6] = " Dope ";
+                 adjectives[7] = " Strong ";
+                 adjectives[8] = " powerful ";
+                 adjectives[9] = " bright ";
 
-        String[] nouns = new String[]{
-                " dog ", " car ", " goat ", " lapTop ", " hand ",
-                " beef ", " fireBall ", " sun ", " mouse "," moose "};
+        String[] nouns = new String[10];
+                 nouns[0] = " Bull ";
+                 nouns[1] = " warHead ";
+                 nouns[2] = " Hive ";
+                 nouns[3] = " Lion ";
+                 nouns[4] = " King ";
+                 nouns[5] = " WarLock ";
+                 nouns[6] = " Cat ";
+                 nouns[7] = " Bird ";
+                 nouns[8] = " Cash ";
+                 nouns[9] = " Book ";
+
 
 
 
@@ -33,15 +48,17 @@ public class ServerNameGenerator {
 
     int adj = adjectives.length;
     int noun = nouns.length;
-    for (int i = 0;i < noun; i++) {
-        int randAdj = (int) (Math.random() * adj);
-        int randNoun = (int) (Math.random() * noun);
+    for (int i = 0;i < 10; i++) {
+        long randomAdj = Math.round(Math.random() * 9);
+        int randAdj = (int) randomAdj;
+        long randomNoun = Math.round(Math.random() * 9);
+        int randNoun = (int) randomNoun;
 
 
 
         System.out.println("Hello  " + userInput +
                 ", your server name options are: " +
-                adjectives[randAdj] + nouns[randNoun]);
+                adjectives[randAdj] + "-"+ nouns[randNoun]);
     }
 
 
