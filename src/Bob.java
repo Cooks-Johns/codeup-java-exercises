@@ -15,15 +15,15 @@ public class Bob {
 //        String response = sc.nextLine();
 
 //
-//        if (response.endsWith("?")) {
-//            System.out.println("Sure");
-//        } else if (response.trim().equals("")) {
-//            System.out.println("Fine. Be that way!");
-//        } else if (response.endsWith("!") || response.toUpperCase().equals(response)) {
-//            System.out.println("Whoa, chill out!");
-//        } else {
-//            System.out.println("Whatever..");
-//        }
+        if (response.endsWith("?")) {
+            System.out.println("Sure");
+        } else if (response.trim().equals("")) {
+            System.out.println("Fine. Be that way!");
+        } else if (response.endsWith("!") || response.toUpperCase().equals(response)) {
+            System.out.println("Whoa, chill out!");
+        } else {
+            System.out.println("Whatever..");
+        }
 
 
         /// -----------==================       NOTES

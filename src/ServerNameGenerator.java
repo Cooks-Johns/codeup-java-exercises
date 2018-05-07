@@ -28,6 +28,8 @@ public class ServerNameGenerator {
 
         // by enumeration
         String beatles[] = {" John ", " paul ", " hingo "," George"};
+        String beatles[] = {" John ", " paul ", " hingo "," George"};
+
         boolean[] withValues = {true, false, true, false};
         Circle circles[] = {new Circle(4), new Circle(20), new Circle(4.5)};
 
@@ -58,7 +60,7 @@ public class ServerNameGenerator {
 
 
         numbers[0] = 6;  // in Java arrays do not have methods
-//        number[7] = 8;  error!
+        number[7] = 8;  error!
 
 
 
