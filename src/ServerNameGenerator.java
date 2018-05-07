@@ -48,10 +48,11 @@ public class ServerNameGenerator {
 
     int adj = adjectives.length;
     int noun = nouns.length;
+
     for (int i = 0;i < 10; i++) {
-        long randomAdj = Math.round(Math.random() * 9);
+        double randomAdj = Math.floor(Math.random() * 10);
         int randAdj = (int) randomAdj;
-        long randomNoun = Math.round(Math.random() * 9);
+        double randomNoun = Math.floor(Math.random() * 10);
         int randNoun = (int) randomNoun;
 
 
