@@ -1,14 +1,39 @@
 package shapes;
 
 public class Rectangle {
-    pub int area;
+    protected double width;
+    protected double length;
+    protected double area;
+    protected double perimeter;
 
-    public int pre = 2 x length + 2 x width;
-    pub int area = length * width;
 
-    public int getArea(){
+    public Rectangle(){}
+
+
+    public Rectangle(double width, double length, double area, double perimeter) {
+        this.width = width;
+        this.length = length;
+        this.area = area = length * width;
+        this.perimeter = 2 * length + 2 * width;
+    }
+
+    public double getWidth() {
+        return width;
+    }
+
+    public double getLength() {
+        return length;
+    }
+
+    public double getArea() {
         return area;
     }
 
-    pu
+    public double getPerimeter() {
+        return perimeter;
+    }
+
+    public double sides(){
+        return getWidth() + l;
+    }
 }
