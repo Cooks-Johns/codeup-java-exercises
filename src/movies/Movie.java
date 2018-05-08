@@ -25,7 +25,13 @@ public class Movie {
         this.category = category;
     }
 
-
+    public static void showMovies(Movies[] movies, String category) {
+        for(Movie movie: movies) {
+            if (category.equals("all")) {
+                System.out.println(movie.getName() + " " + );
+            }
+        }
+    }
 
 //   -----------===================                 NOTESS
 

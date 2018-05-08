@@ -10,7 +10,7 @@ class Square extends Rectangle {
 
    }
 
-   pub
-
-
+    public double sides() {
+        return super.sides();
+    }
 }
