@@ -108,6 +108,8 @@
 
     ///-----------------=================               TESTING
 
+import java.util.Scanner;
+
 //
 //public static void count(int n) {
 //    if (n <= 0) {
@@ -121,8 +123,9 @@
 //    count(5);
 //
 //
-//import java.util.Scanner;
-//
+
+import java.util.Scanner;
+
 public class MethodsExercises {
     public static void main(String[] args) {
 
@@ -132,7 +135,7 @@ public class MethodsExercises {
         System.out.println("2 plus 3 is " + add(3, 3));
         System.out.println("2 minus 3 is " + subtract(3, 3));
         System.out.println("2 times 3 is " + multiplication(3, 3));
-        System.out.println("2 divided by 3 is " + division(3, 3));
+        System.out.println("2 divided by 3 is " + divide(3, 3));
 
 
 
@@ -141,12 +144,30 @@ public class MethodsExercises {
         showFactorialOutput(number);
     }
 
+
+
     public static int add(int a, int b) {
         return a + b;
     }
 
     public static int subtract(int a, int b) {
         return a - b;
+    }
+
+    public static int multiplication(int a, int b) {
+        return a * b;
+    }
+
+    public static double divide(int a, int b) {
+        return (double) a / b;
+    }
+
+    public static int modulo(int number, int divisor) {
+        return number % divisor;
+    }
+    public static int getInt() {
+        Scanner scan = new Scanner(System.in).useDelimiter("\n");
+        return scan.nextInt();
     }
 
 
@@ -173,9 +194,9 @@ public class MethodsExercises {
         String output = number + " ! = ";
 
         for (int i = 1; i <= number; i++) {
-            output += i + " x";
+            output += i + " x ";
         }
-        if (output.endsWith(" x")) {
+        if (output.endsWith("x ")) {
             output = output.substring(0, output.length() - 2);
         }
         output += " = " + factorial(number);

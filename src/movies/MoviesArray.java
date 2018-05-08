@@ -1,7 +1,7 @@
 package movies;
 
 public class MoviesArray {
-    public static MoviesApplication[] findAll() {
+    public static Movie[] findAll() {
         return new MoviesApplication[]{
                 new MoviesApplication("Citizen Kane", "drama"),
                 new MoviesApplication("Casablanca", "drama"),

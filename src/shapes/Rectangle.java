@@ -3,8 +3,7 @@
 //public class Rectangle {
 //    protected double width;
 //    protected double length;
-//    protected double area;
-//    protected double perimeter;
+//\
 //    protected
 //
 //
@@ -14,8 +13,8 @@
 //    public Rectangle(double width, double length, double area, double perimeter) {
 //        this.width = width;
 //        this.length = length;
-//        this.area = area = length * width;
-//        this.perimeter = 2 * length + 2 * width;
+//        this.area = area;
+//        this.perimeter;
 //    }
 //
 //    public double getWidth() {
@@ -27,14 +26,17 @@
 //    }
 //
 //    public double getArea() {
-//        return area;
+//        return length * width;
 //    }
 //
 //    public double getPerimeter() {
-//        return perimeter;
+//        return 2 * length + 2 * width;
 //    }
 //
 //    public double sides(){
 //        return getWidth() + getLength();
+//    }
+//    public String toString() {
+//    return  "a rec with" + getLength() + " and width of " + ;
 //    }
 //}
