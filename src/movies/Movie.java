@@ -25,10 +25,21 @@ public class Movie {
         this.category = category;
     }
 
-    public static void showMovies(Movies[] movies, String category) {
+    public static void showMovies(Movie[] movies, String category) {
         for(Movie movie: movies) {
             if (category.equals("all")) {
-                System.out.println(movie.getName() + " " + );
+                System.out.println(movie.getName() + " " + movie.getCategory());
+            } else {
+                System.out.println(movie.getName() + "" + movie.getCategory());
+
+            }
+        }
+    }
+
+    public static void searchTitle(Movie[] movies, String title) {
+        for(Movie movie: movies) {
+            if(movie.getName().contains(title)) {
+                System.out.println(movie.getName() + " " + movie.getCategory());
             }
         }
     }

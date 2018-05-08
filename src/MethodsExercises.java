@@ -121,28 +121,67 @@
 //    count(5);
 //
 //
-import java.util.Scanner;
+//import java.util.Scanner;
 //
-//public class MethodsExercises {
-//    public static void main(String[] args) {
-//        do {
-//            int randomNumber =o gamePickNumber();
-//            int guess;            // All user inputs are alidated
-//            do {
-//                guess = userPickNumber();
-//                if (guess < randomNumber) {
-//                    System.out.println("Higher");
-//                }
-//                if (guess > randomNumber) {
-//                    System.out.println("Lower");
-//                } else {
-//                    System.out.println("I guess we are Done here");
-//                }
-//            } while (guess != randomNumber);
-//        }
-//        public static int()
-//
-//    }
-//}
+public class MethodsExercises {
+    public static void main(String[] args) {
+
+        System.out.println("Let's write and use methods!");
+
+
+        System.out.println("2 plus 3 is " + add(3, 3));
+        System.out.println("2 minus 3 is " + subtract(3, 3));
+        System.out.println("2 times 3 is " + multiplication(3, 3));
+        System.out.println("2 divided by 3 is " + division(3, 3));
+
+
+
+
+        int number = getInt(1, 10);
+        showFactorialOutput(number);
+    }
+
+    public static int add(int a, int b) {
+        return a + b;
+    }
+
+    public static int subtract(int a, int b) {
+        return a - b;
+    }
+
+
+    public static int getInt(int min, int max) {
+        System.out.println("Please input an interger between " + min + max + ": ");
+        int number = getInt();
+
+        if (number < min || number > max) {
+            return getInt(min, max);
+        }
+        return number;
+    }
+
+    public static long factorial(int number) {
+        long total = 1;
+        for (int i = number; i >= 1; i--) {
+            total *= i;
+        }
+        return total;
+    }
+
+
+    public static void showFactorialOutput(int number) {
+        String output = number + " ! = ";
+
+        for (int i = 1; i <= number; i++) {
+            output += i + " x";
+        }
+        if (output.endsWith(" x")) {
+            output = output.substring(0, output.length() - 2);
+        }
+        output += " = " + factorial(number);
+        System.out.println(output);
+
+    }
+}
 
 
