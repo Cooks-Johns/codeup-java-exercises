@@ -8,10 +8,12 @@ public class Input {
         private Scanner scanner;
 
         public Input() {
+
             scanner = new Scanner(System.in);
         }
 
         public String getString() {
+
             return scanner.nextLine();
         }
 
@@ -32,7 +34,6 @@ public class Input {
 
        public int  getInt() {
             Scanner scanner = new Scanner(System.in);
-            String inPut = scanner.next();
             return scanner.nextInt();
         }
 
