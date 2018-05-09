@@ -28,7 +28,10 @@ public class MoviesApplication {
 
             int choice = getChoice();
             handleChoice(choice);
-            System.out.println("You Picked !  " + choice);
+            System.out.println("< --=================================-- >");
+            System.out.println("  | Thank You for using the Music App!|  ");
+            System.out.println("< --=================================-- >");
+
 
         } while(true);
     }
