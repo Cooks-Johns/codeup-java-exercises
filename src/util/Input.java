@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Input {
 
 
-    public class Input {
         // option 1) Inline the assignment
         // private Scanner scanner = new Scanner(System.in);  // = null
         private Scanner scanner;
@@ -35,6 +34,7 @@ public class Input {
         }
 
         int getInt() {
+
             return scanner.nextInt();
         }
 
@@ -53,7 +53,7 @@ public class Input {
             return number;
         }
     }
-}
+
 
 //    private Scanner scanner;  // = null
 //

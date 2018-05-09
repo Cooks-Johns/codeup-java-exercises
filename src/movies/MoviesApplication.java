@@ -11,6 +11,7 @@ public class MoviesApplication {
         System.out.println("Welcome to MovieApp!");
 
         showMenu();
+        getChoice();
     }
 
     public static void showMenu() {
