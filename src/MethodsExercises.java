@@ -110,22 +110,6 @@
 
 import java.util.Scanner;
 
-//
-//public static void count(int n) {
-//    if (n <= 0) {
-//        System.out.println("Alldone!");
-//        return;
-//    }
-//    System.out.println(n);
-//    count(n - 1);
-//}
-//public static void answer(String[] args) {
-//    count(5);
-//
-//
-
-import java.util.Scanner;
-
 public class MethodsExercises {
     public static void main(String[] args) {
 
