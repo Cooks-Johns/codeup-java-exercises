@@ -21,6 +21,9 @@ public class DiceRoll {
 
     }
     public static boolean wantsToContinue() {
-
+        System.out.println("Do you want to roll the dice again? y/n");
+        Scanner input = new Scanner(System.in);
+        String answer = input.nextLine();
+        return "y".equalsIgnoreCase(answer) || "yes".equalsIgnoreCase(answer);
     }
 }
