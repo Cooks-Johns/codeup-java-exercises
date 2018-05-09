@@ -11,7 +11,7 @@ public class MoviesApplication {
         System.out.println("Welcome to MovieApp!");
 
         showMenu();
-        getChoice();
+//        getChoice();
     }
 
     public static void showMenu() {
@@ -28,6 +28,7 @@ public class MoviesApplication {
 
             int choice = getChoice();
             handleChoice(choice);
+
         } while(true);
     }
 
@@ -63,11 +64,10 @@ public class MoviesApplication {
         }
     }
 
-    public static void showMovies(String category) {
+    public static void showMovies(String categ) {
         for(Movie movie : movies) {
-            if(movie.isInCategory(category)) {
                 System.out.println(movie);
             }
         }
-    }
+
 }

@@ -11,13 +11,20 @@
 //        } while (wantsToContinue());
 //    }
 //    public static int askForNumberOfSides() {
+//        Scanner input = new Scanner(System.in);
+//        Scanner.out.println(System.in);
+//        input.nextLine();
 //
 //    }
 //    public static void rollDiceMessage() {
-//
+//        System.out.println("Hit enter to roll the dices!");
+//        Scanner input = new Scanner(System.in);
+//        input.nextLine();
 //
 //    }
 //    public static int roll(int sides) {
+//        return (int) (Math.random() * sides) + 1;
+//
 //
 //    }
 //    public static boolean wantsToContinue() {
