@@ -1,27 +1,14 @@
 package shapes;
 
 public class Rectangle {
-    protected double width;
-    protected double length;
-    protected double area;
-    protected String type;
-
-
-
-    public Rectangle(double v, double width, double length, double area) {
-        this.width = width;
-        this.length = length;
-        this.area = area;
-        type = "rectangle";
-    }
+    protected int width;
+    protected int length;
 
     public Rectangle(int width, int length) {
-        super();
+        this.width = width;
+        this.length = length;
     }
 
-    public Rectangle() {
-
-    }
 
     public double getWidth() {
         return width;
@@ -39,10 +26,8 @@ public class Rectangle {
         return  2 * length + 2 * width;
     }
 
-    public double sides(){
-        return getWidth() + getLength();
-    }
+
     public String toString() {
-    return  "This Rectangle with is " + getLength() + " and width of " + getArea() + getPerimeter() + sides();
+    return  "                       This Rectangle with length of " + getLength() + " and width of " + getWidth() + " has permimeter of "+ getPerimeter() + " and area of " +  getArea();
     }
 }
