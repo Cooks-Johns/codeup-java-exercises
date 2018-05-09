@@ -28,6 +28,7 @@ public class MoviesApplication {
 
             int choice = getChoice();
             handleChoice(choice);
+            System.out.println("You Picked !  " + choice);
 
         } while(true);
     }
@@ -64,10 +65,12 @@ public class MoviesApplication {
         }
     }
 
-    public static void showMovies(String categ) {
+    public static void showMovies(String category) {
         for(Movie movie : movies) {
+            if(movie.isInCategory(category)) {
                 System.out.println(movie);
             }
         }
+    }
 
 }
