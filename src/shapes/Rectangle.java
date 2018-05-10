@@ -28,6 +28,8 @@ public class Rectangle {
 
 
     public String toString() {
-    return  "                       This Rectangle with length of " + getLength() + " and width of " + getWidth() + " has permimeter of "+ getPerimeter() + " and area of " +  getArea();
+    return  "     This Rectangle length is " +
+            getLength() + " and width of " + getWidth() +
+            " the perimeter is "+ getPerimeter() + " and area of " +  getArea();
     }
 }

@@ -11,7 +11,7 @@ public class Square extends Rectangle {
 
 
     public double getPerimeter() {
-        return side*4;
+        return side * 4;
     }
 
 
