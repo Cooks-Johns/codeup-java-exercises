@@ -35,7 +35,7 @@ public class ShapesTest {
 
     public static void main(String[] args) {
 
-        Scanner userInt = new Scanner(" ");
+        Mesurable shape1 = new Rectangle(3, 5);
 
 
 

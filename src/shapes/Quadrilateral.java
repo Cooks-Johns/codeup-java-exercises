@@ -5,20 +5,24 @@ public abstract class Quadrilateral extends Shape implements Measurable {
 //    and implements Measurable. This class should have:
 //
 //    protected properties for length and width
-    protected double lenght;
+    protected double length;
     protected double width;
 
 //    a constructor that accepts two numbers for the length and width and sets those properties
-    public Quadrilateral(double lenght, double width) {
+    public Quadrilateral(double length, double width) {
         this.width = width;
-        this.lenght = lenght;
+        this.length = length;
     }
 
-    public abstract void setLength(double lenght);
+    public abstract void setLength(double length);
     public abstract void setWidth(double width);
 
-    public double getLenght() {
-        return lenght;
+    public double getLength() {
+        return length;
+    }
+
+    public double getWidth() {
+        return width;
     }
 
     public  double getPerimeter() {
@@ -26,7 +30,7 @@ public abstract class Quadrilateral extends Shape implements Measurable {
     }
 
     public double getArea() {
-        return lenght * width;
+        return length * width;
     }
 
 

@@ -33,22 +33,32 @@
 //            " the perimeter is "+ getPerimeter() + " and area of " +  getArea();
 //    }
 //}
-
+//
 package shapes;
 
 public class Rectangle extends Quadrilateral {
 
+
+    protected double width;
+    protected double length;
+
+
     public Rectangle(double length, double width) {
         super(length, width);
+        this.width = width;
+        this.length = length;
     }
+
+
     @Override
     public void setLength(double length) {
-        this.length = lenght;
+        this.length = length;
     }
+
 
     @Override
     public void setWidth(double width) {
-        this.width = width
+        this.width = width;
     }
 
 
