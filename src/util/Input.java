@@ -18,6 +18,10 @@ public class Input {
         }
 
         public boolean yesNo() {
+
+        }
+
+        public boolean yesNo() {
             String answer = scanner.nextLine();  // null
             // auto-boxing => value (string) -> wrap it in a an object -> new String("y").equalsIgnoreCase()
             return "y".equalsIgnoreCase(answer) || "yes".equalsIgnoreCase(answer);

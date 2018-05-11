@@ -27,17 +27,34 @@
 //    }
 //
 //}
-
-package shapes;
-import java.util.Scanner;
-
-public class ShapesTest {
-
-    public static void main(String[] args) {
-
-        Mesurable shape1 = new Rectangle(3, 5);
+//\]\--------------------===========================
 
 
 
-    }
-}
+
+
+
+
+
+
+//package shapes;
+//import java.util.Scanner;
+//
+//
+//
+//public class ShapesTest {
+//    public static void main(String[] args) {
+//
+//        Measurable shape1 = new Rectangle(3, 5);
+//
+//        Measurable shape2 = new Rectangle(32, 23);
+//
+//        System.out.println("The length is: " + shape1.getLength() +
+//                " the width is: " + shape1.getWidth() +
+//                " the area is: " + shape1.getArea() +
+//                " the peramerter is: " + shape1.getPerimeter());
+//
+//
+//
+//    }
+//}
