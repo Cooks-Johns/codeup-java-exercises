@@ -17,9 +17,7 @@ public class Input {
             return scanner.nextLine();
         }
 
-        public boolean yesNo() {
 
-        }
 
         public boolean yesNo() {
             String answer = scanner.nextLine();  // null
