@@ -1,29 +1,28 @@
 package grades;
+
 import java.util.ArrayList;
-import java.util.Im
 
+public class Student {
+    private String name;
+    private ArrayList<Integer> grades;
+    private double average;
 
-public abstract class Student {
-private String name;
-private ArrayList<Integer> grades;
-
-public Student(String name){
-    this.name = name;
-    grades = new ArrayList<>();
+    public Student(String name) {
+        this.name = name;
+        grades = new ArrayList<>();
     }
 
-    public void addGrades(ArrayList<Integer> grades) {
-        this.grades = grades;
-        System.out.println()
+    public String getName() {
+        return this.name;
+    }
+    public void addGrade(int grade) {
+        grades.add(grade);
+    }
+    public double getGradeAverage() {
+        double sum = 0;
+        for (int grade : grades) {
+            sum += grade;
+        }
+        return sum/grades.size();
     }
 }
-
-
-
-
-
-//    public String getName(String);
-//    public double getGradeAverage;
-
-
-
