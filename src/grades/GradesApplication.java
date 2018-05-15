@@ -23,6 +23,7 @@ public class GradesApplication {
                     "here are some of the student names: " + " \n" +
             " JazzyJ ");
 
+            System.out.print("Would you like to look at another student's information? Y | N : ");
             String choice2 = sc.next();
             cont = choice2.equalsIgnoreCase("y");
         } while (cont);
