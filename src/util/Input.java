@@ -25,6 +25,7 @@ public class Input {
             return "y".equalsIgnoreCase(answer) || "yes".equalsIgnoreCase(answer);
         }
 
+
         public int getInt(int min, int max) {
             int value = getInt();
             if (value < min || value > max) {
@@ -33,11 +34,11 @@ public class Input {
             }
             return value;
         }
-
-       public int  getInt() {
+        public int  getInt() {
             Scanner scanner = new Scanner(System.in);
             return scanner.nextInt();
         }
+
 
         public double getDouble(double min, double max) {
             double value = getDouble();
@@ -47,7 +48,6 @@ public class Input {
             }
             return value;
         }
-
         public double getDouble() {
             double number = scanner.nextDouble();
             scanner.nextLine();
