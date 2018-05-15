@@ -1,12 +1,11 @@
 package util;
 import java.util.Scanner;
-import java.lang.NumberFormatException;
-
 
 public class Input {
 
 
-    private Scanner scanner;
+
+        private Scanner scanner;
 
         public Input() {
 
@@ -27,9 +26,7 @@ public class Input {
         }
 
         public int getInt(int min, int max) {
-            int value = Integer.valueOf(String s);
-            System.out.println(s +10);
-
+            int value = getInt();
             if (value < min || value > max) {
                 System.out.printf("Enter a number between %d and %d%n", min, max);
                 return getInt(min, max);
@@ -55,8 +52,6 @@ public class Input {
             double number = scanner.nextDouble();
             scanner.nextLine();
             return number;
-
-
         }
     }
 
