@@ -22,19 +22,26 @@ public class ConsoleExercises {
 
 
 
-        System.out.println("All the text entered: " + firstWord + " " + secondWord + " " + thirdWord);
+        System.out.println("All the text entered: " + firstWord +
+                ", " + secondWord + ", " + thirdWord + ".");
 
         sc.nextLine();  // grabs the last \n charcter and we can ignore it
 
 
-//        Prompt a user to enter a sentence, then store that sentence in a String variable using the .next method, then display that sentence back to the user.
+//        Prompt a user to enter a sentence,
+//        then store that sentence in a String
+//        variable using the .next method,
+//        then display that sentence back to the user.
 //        do you capture all of the words?
 
         System.out.print("Please enter a funny phrase \n" );
-        String thisSentence = sc.nextLine(); //have to use nextLine() for a sentence
-        System.out.println("As the duck sits on the desk the developer looks at him and says <br> " + "' " + thisSentence + "' " +
-                " the duck is just thinking about going to  " + firstWord + " , "  + secondWord + "  , or " + thirdWord +
-                " then tells the developer 'if all else fails pour some water on it!'");
+        String thisSentence = sc.nextLine();   //--------------------------->-->
+                                               // have to use nextLine() for a sentence
+
+        System.out.println("As the duck sits on the desk the developer looks at him and says <br> " +
+                            "' " + thisSentence + "' " + " the duck is just thinking about going to  " +
+                            firstWord + " , "  + secondWord + "  , or " + thirdWord +
+                            " then tells the developer 'if all else fails pour some water on it!'");
 
 //        Calculate the perimeter and area of Codeup's classrooms
 //        Prompt the user to enter values of length and width of the classroom.
