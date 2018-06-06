@@ -1,7 +1,7 @@
 package util;
 
 import util.Input;
-
+import org.apache.commons.lang3.StringUtils;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -32,6 +32,8 @@ public class FileIO {
         } catch(IOException e) {
             System.out.println(e.getMessage());
         }
+        String str = filename.toUpperCase();
+        String cap = str.substring(0, 1).toUpperCase() + str.substring(1);
 
 
     }
